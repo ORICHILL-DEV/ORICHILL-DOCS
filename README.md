@@ -1,44 +1,31 @@
----
-icon: fire-flame-curved
-cover: .gitbook/assets/ORICHILL.png
-coverY: 0
-layout:
-  width: default
-  cover:
-    visible: true
-    size: hero
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
-  metadata:
-    visible: true
-  tags:
-    visible: true
----
+# ORICHILL Wiki
 
-# Добро Пожаловать на Википедию сервера ORICHILL!
+Исходники вики сервера ORICHILL на [VitePress](https://vitepress.dev). Сайт публикуется через GitHub Pages на **https://wiki.orichill.net**.
 
-`🍃` **ㆍ&#x20;**<mark style="color:$primary;">**ORI**</mark>**CHILL** — это уникальный сплав хардкора и ламповости. Мы усложнили мир, чтобы каждый твой шаг имел значение, но сбалансировали это удобными механиками для комфортной игры. В основе — <mark style="color:$primary;">**Vanilla**</mark> с элементами <mark style="color:$primary;">**PvE**</mark>, <mark style="color:$primary;">**RPG**</mark> и погружением в [<mark style="color:$primary;">**полу-RP**</mark>](https://wiki.orichill.ru/main/faq#a-gde-tut-rp).
+## Как править
 
-> <mark style="color:$primary;">**`!↳`**</mark>   _<mark style="color:$info;">Это значит, что наш сервер существенно изменит геймплей игрока в сторону усложнения</mark> <mark style="color:$tint;">**PvE-состовляющей**</mark><mark style="color:$info;">. То есть, сервер усложнит игровой процесс и это направлено для</mark> <mark style="color:$info;"></mark><mark style="color:$info;">**опытных игроков**</mark><mark style="color:$info;">, которым наскучил легкий</mark> <mark style="color:$tint;">**PvE**</mark> <mark style="color:$info;">в ванильном издании</mark> <mark style="color:$tint;">**Minecraft**</mark><mark style="color:$info;">**.**</mark>_
+- Страницы лежат в `docs/` (Markdown). Меню слева задаётся в `docs/.vitepress/sidebar.json`.
+- Картинки и файлы кладутся в `docs/public/assets/`, а в тексте на них ссылаются как `/assets/имя-файла.png`.
+- Блоки-подсказки: `::: info`, `::: tip`, `::: warning`, `::: danger`, каждый закрывается строкой `:::`.
+- Цветной текст (замена GitBook-разметки): `<span class="oc-c-primary">текст</span>`. Доступны `primary`, `success`, `warning`, `danger`, `info`, `tint`, а также фон `oc-bg-*`.
 
-<mark style="color:$primary;">**`✌️`**</mark> **ㆍ** <mark style="color:$primary;">**`Забудь про легкие прогулки.`**</mark> Мы переработали <mark style="color:$primary;">**PvE-составляющую**</mark> для тех, кому стало тесно в обычных рамках **Minecraft**. Это вызов для опытных игроков, готовых к настоящему выживанию.&#x20;
+Локальный просмотр:
 
-`👾` **ㆍ**  <mark style="color:$primary;">**`Новый уровень хардкора:`**</mark> опасные мобы со своим уровнем развития, полное отсутствие координат и атмосфера, где бдительность — **твой единственный союзник**. Выживешь ли ты здесь? <mark style="color:$primary;">**UwUヾ**</mark>
+```bash
+npm ci
+npm run docs:dev
+```
 
-`📖` **ㆍ&#x20;**<mark style="color:$primary;">**`Стань частью истории.`**</mark> Исследуй, созидай, объединяйся с другими и реализуй масштабные проекты. Здесь каждый находит своё призвание.\
-\
-`🎮` **ㆍ&#x20;**<mark style="color:$primary;">**`Присоединяйся к ORICHILL!`**</mark> Здесь главное — не просто игра, а дружба, взаимовыручка и чистое удовольствие от процесса
+## Публикация
 
-{% hint style="info" icon="thumbtack-angle" %}
-<mark style="color:$primary;">**`👾 ВНИМАНИЕ 👾`**</mark>\
-<mark style="color:$primary;">**`↳`**</mark> \*_Подметим, что определённой тематики у сервера нет, т.к. мы сами не знаем, в какую сферу он больше всего направлен\*_
-:::
+Каждый push в `main` запускает `.github/workflows/deploy.yml`: сборка и деплой в GitHub Pages.
 
+Разовая настройка:
+1. Settings → Pages → Source: **GitHub Actions**.
+2. DNS: CNAME-запись `wiki.orichill.net` → `<логин>.github.io`.
+3. Settings → Pages → Custom domain: `wiki.orichill.net`, затем включить **Enforce HTTPS**. Файл `docs/public/CNAME` уже есть.
+4. Отключить Git Sync в GitBook, чтобы он не перезаписывал репозиторий старой структурой.
+
+## Картинки из GitBook
+
+В репозитории никогда не было папки `.gitbook/assets`, поэтому все 49 картинок и файлов сейчас заменены фиолетовыми заглушками. Список имён лежит в `docs/.vitepress/missing-assets.txt`. Достаточно положить оригиналы с теми же именами в `docs/public/assets/` и заменить ими заглушки. Логотип ищется по пути `docs/public/assets/logo.png`.

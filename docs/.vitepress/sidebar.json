@@ -1,0 +1,170 @@
+[
+  {
+    "text": "Основное",
+    "items": [
+      {
+        "text": "Информация",
+        "link": "/main/info"
+      },
+      {
+        "text": "Общие Правила",
+        "link": "/main/rules"
+      },
+      {
+        "text": "Команды",
+        "link": "/main/all-commands"
+      },
+      {
+        "text": "Часто задаваемые вопросы (FAQ)",
+        "link": "/main/faq"
+      }
+    ]
+  },
+  {
+    "text": "Игровые механики",
+    "items": [
+      {
+        "text": "Механики",
+        "link": "/mechanics/mechanics/",
+        "items": [
+          {
+            "text": "Защита приватизированной территории",
+            "link": "/mechanics/mechanics/protection-private-territory-docs"
+          },
+          {
+            "text": "Навыки",
+            "link": "/mechanics/mechanics/skills"
+          },
+          {
+            "text": "Ранги",
+            "link": "/mechanics/mechanics/ranks"
+          },
+          {
+            "text": "Привилегии",
+            "link": "/mechanics/mechanics/group"
+          },
+          {
+            "text": "Кастомные Зачарования",
+            "link": "/mechanics/mechanics/custom-enchants"
+          },
+          {
+            "text": "Кастомные Крафты",
+            "link": "/mechanics/mechanics/custom-crafts"
+          },
+          {
+            "text": "Кастомные Мобы Эндер Мира",
+            "link": "/mechanics/mechanics/cmem"
+          },
+          {
+            "text": "Защита ЛВ",
+            "link": "/mechanics/mechanics/protect-chest"
+          },
+          {
+            "text": "Квесты",
+            "link": "/mechanics/mechanics/kvesty"
+          },
+          {
+            "text": "Сезоны и Температура",
+            "link": "/mechanics/mechanics/seasons-and-temperature"
+          },
+          {
+            "text": "Доп. Предметы под Шаблоны",
+            "link": "/mechanics/mechanics/dop.-predmety-pod-shablony"
+          },
+          {
+            "text": "Жажда",
+            "link": "/mechanics/mechanics/zhazhda"
+          },
+          {
+            "text": "Новые Данджи",
+            "link": "/mechanics/mechanics/new-dungeons"
+          },
+          {
+            "text": "Доп. Предметы под Шаблоны",
+            "link": "/mechanics/mechanics/dop.-predmety-pod-shablony-1"
+          },
+          {
+            "text": "Пивоварня",
+            "link": "/mechanics/mechanics/bear"
+          },
+          {
+            "text": "Декоративные Модели",
+            "link": "/mechanics/mechanics/dekorate-model"
+          },
+          {
+            "text": "Интерактивные Таблички",
+            "link": "/mechanics/mechanics/znaks"
+          },
+          {
+            "text": "Новая Готовка",
+            "link": "/mechanics/mechanics/novaya-gotovka"
+          },
+          {
+            "text": "Чаты",
+            "link": "/mechanics/mechanics/chat"
+          },
+          {
+            "text": "SimpleVoiceChat",
+            "link": "/mechanics/mechanics/voice-chat"
+          },
+          {
+            "text": "Emotecraft",
+            "link": "/mechanics/mechanics/emotecraft_installing"
+          },
+          {
+            "text": "Изменённый баланс торговли с пиглинами",
+            "link": "/mechanics/mechanics/izmenyonnyi-balans-torgovli-s-piglinami"
+          }
+        ],
+        "collapsed": true
+      }
+    ]
+  },
+  {
+    "text": "Role play",
+    "items": [
+      {
+        "text": "Общая информация про RP",
+        "link": "/rp/info"
+      }
+    ]
+  },
+  {
+    "text": "Прочее",
+    "items": [
+      {
+        "text": "Поддержка Проекта",
+        "link": "/others/donate"
+      },
+      {
+        "text": "Контентмейкеры",
+        "link": "/others/content-maker-info"
+      },
+      {
+        "text": "Адаптация механизмов",
+        "link": "/others/adaptaciya-mekhanizmov"
+      },
+      {
+        "text": "Подключение c Raknetify",
+        "link": "/others/raknetify"
+      },
+      {
+        "text": "Обход блокировки Discord",
+        "link": "/others/rkn-pidorasi"
+      }
+    ]
+  },
+  {
+    "text": "Legal",
+    "items": [
+      {
+        "text": "Пользовательское Соглашение",
+        "link": "/legal/user_agreement"
+      },
+      {
+        "text": "Политика Обработки Персональных Данных",
+        "link": "/legal/privacy_policy"
+      }
+    ]
+  }
+]
